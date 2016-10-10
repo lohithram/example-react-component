@@ -1,0 +1,158 @@
+.fbra_clickAndCollectTabContentContainer {
+	margin-top: $spacing-default;
+}
+
+.fbra_deliveryGroupTabs {
+	margin-bottom: 20px;
+}
+.fbra_deliverAndCollect__screen {
+	@extend .fbra_gridItem--col-lg-12;
+}
+.fbra_locationSummary__storeDetails {
+	@extend .fbra_gridItem--col-sm-4;
+	@extend .fbra_gridItem--col-xs-12;
+
+	vertical-align: top;
+	padding-left: $spacing-default;
+}
+.fbra_locationSummary{
+	.fbra_formItem {
+		@extend .fbra_gridItem--col-xs-4;
+		
+		vertical-align: top;
+		padding-right: $spacing-default;
+		width: 32%;
+
+		.fbra_label {
+			@include font-size($font-size-default);
+
+			font-family: $font-bold;
+		}
+	}
+}
+.fbra_locationSummary__openingHours {
+	@extend .fbra_gridItem--col-sm-4;
+	@extend .fbra_gridItem--col-xs-12;
+}
+.fbra_locationSummary__editAreaLink{
+	@extend .fbra_gridItem--col-lg-12;
+	@extend .fbra_gridItem--col-xs-12;
+
+	text-align: right;
+	float: right;
+	padding-right: $spacing-default;
+	margin: 0 $spacing-default 17px 0;
+	color: $color-silver;
+	background: url("../../base/img/fbra_edit_icon.png") no-repeat right center;
+}
+.fbra_locationSummary__storeDetails__name {
+	@include font-size($font-size-default);
+	
+	font-family: $font-bold;
+	margin-bottom: 0;
+}
+.fbra_locationSummary__openingHours__heading {
+	@include font-size($font-size-default);
+	
+	font-family: $font-bold;
+}
+
+.fbra_locationSummary__storeDetails__distance {
+	font-family: $font-bold;
+	margin-bottom: 0;	
+}
+.fbra_locationSummary__storeDetails__address {
+	margin-bottom: 0;	
+}
+.fbra_locationSummary__storeDetails__address,
+.fbra_locationSummary__openingHours__text {
+	margin-bottom: 0;
+}
+.fbra_locationSummary__storeDetails__address,
+.fbra_locationSummary__openingHours__text p {
+	color: $color-gray;
+}
+.fbra_locationSummary__driveThru{
+	clear: both;
+	background: $color-highlight url("../../base/img/fbra_button_arrow_right.png") no-repeat 98% 19px;
+	padding: 12px 13px;
+	margin: 0 $spacing-default $spacing-medium $spacing-default;
+	border-radius: 10px;
+
+	.fbra_locationSummary__driveThru__newDriveThru,
+	.fbra_notification__link {
+		font-family: $font-bold;
+		display: inline;
+		margin-left: 10px;
+	}
+	.fbra_notification {
+		display: inline;
+	}
+}
+.fbra_additionalInfo {
+	border: none;
+	padding: 0;
+	margin: $spacing-small;
+
+	.fbra_additionalInfo__viewMoreLink {
+		padding-left: 0;
+	}
+}
+.fbra_additionalInfo__heading {
+	@include font-size($font-size-default);
+
+	font-family: $font-bold;
+}
+.fbra_whoWillCollectThisDelivery {
+	padding: 0 $spacing-default;
+	.fbra_heading {
+		@include font-size($font-size-default);
+
+		font-family: $font-bold;
+		margin-bottom: 10px;
+	}
+	.fbra_receiveDelivery {
+		@extend .fbra_gridItem--col-sm-12;
+
+		margin-bottom: 18px;
+	}
+	.fbra_receiveDeliveryRadioButtons {
+		@extend .fbra_gridItem--col-sm-5;
+		@extend .fbra_gridItem--col-xs-12;
+
+		float: left;
+
+		.fbra_label {
+			margin-bottom: 0px;
+		}
+	}
+}
+.fbra_receiveDelivery__form {
+	.fbra_formItem {
+		margin: 0;
+	}
+}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_locationSummary {
+		.fbra_formItem {
+			width: 100%;
+			padding-left: $spacing-default;
+		}
+	}
+	.fbra_locationSummary__driveThru {
+		background: $color-highlight url("../../base/img/fbra_button_arrow_right.png") no-repeat 96% center;
+	}
+	.fbra_whoWillCollectThisDelivery {
+		.fbra_receiveDeliveryRadioButtons {
+			float: none;
+			margin-bottom: 15px;
+		}
+	}
+	.fbra_locationSummary__storeDetails {
+		margin-bottom: 20px;
+	}
+	.fbra_locationSummary__openingHours {
+		padding-left: $spacing-default;
+	}
+}

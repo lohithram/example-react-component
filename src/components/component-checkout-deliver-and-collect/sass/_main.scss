@@ -1,0 +1,58 @@
+/*****************************************
+ * React component main SASS file
+ * All SASS modules should be included in this file
+ *****************************************/
+
+/**
+ * .fbra_falabellaComponentCheckoutDeliverAndCollect
+ * Outer class for the ComponentCheckoutDeliverAndCollect component
+ * NOTE: All classes must be prefixed with fbra_ to prevent collisions
+ * NOTE: Please follow BEM best practices using camel casing over hyphenating for block, element and modifier names
+ */
+
+.fbra_falabellaComponentCheckoutDeliverAndCollect {
+	@import "modules/app-container";
+	@import "modules/delivery-group-container";
+	@import "modules/delivery-group-header";
+	@import "modules/delivery-group-tabs";
+	@import "modules/delivery-instructions";
+	@import "modules/form-base-modal";
+
+	@import "modules/click-and-collect-tab-content/click-and-collect-tab-content-container";
+	@import "modules/click-and-collect-tab-content/select-store-screen";
+	@import "modules/click-and-collect-tab-content/store-selected-screen";
+
+	@import "modules/click-and-collect-tab-content/click-and-collect/additional-info";
+	@import "modules/click-and-collect-tab-content/click-and-collect/search-stores";
+	@import "modules/click-and-collect-tab-content/click-and-collect/store-results-filter";
+	@import "modules/click-and-collect-tab-content/click-and-collect/store-results-list-item";
+	@import "modules/click-and-collect-tab-content/click-and-collect/store-results-list";
+	@import "modules/click-and-collect-tab-content/click-and-collect/store-results-map";
+	@import "modules/click-and-collect-tab-content/click-and-collect/store-summary";
+
+	@import "modules/deliver-to-address-tab-content/address-book/address-book-item";
+	@import "modules/deliver-to-address-tab-content/address-book/address-book-list";
+
+	@import "modules/deliver-to-address-tab-content/custom-date-time-delivery/date-time-delivery-container";
+	@import "modules/deliver-to-address-tab-content/custom-date-time-delivery/date-time-delivery-day-column";
+	@import "modules/deliver-to-address-tab-content/custom-date-time-delivery/date-time-delivery-slot";
+
+	@import "modules/deliver-to-address-tab-content/when-to-deliver/shipping-method";
+	@import "modules/deliver-to-address-tab-content/when-to-deliver/when-to-deliver";
+
+	@import "modules/deliver-to-address-tab-content/address-form-container";
+	@import "modules/deliver-to-address-tab-content/address-selected-screen";
+	@import "modules/deliver-to-address-tab-content/address-summary";
+	@import "modules/deliver-to-address-tab-content/deliver-to-address-tab-content-container";
+	@import "modules/deliver-to-address-tab-content/delivery-summary";
+	@import "modules/deliver-to-address-tab-content/select-address-screen";
+
+	@import "modules/receive-delivery/receive-delivery";
+
+	padding: $spacing-small 0 $spacing-extra-small 0;
+	max-width: 880px;
+
+	@media screen and (max-width: $breakpoint-mobile-landscape) {
+		margin:0px;		
+	}
+}

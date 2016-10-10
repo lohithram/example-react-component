@@ -1,0 +1,23 @@
+.fbra_clickAndCollectTabContentContainerNotification {
+	@include font-size($font-size-small);
+	
+	display: block;		
+	background: $color-highlight url("../../base/img/fbra_info_round_icon.png") no-repeat 8px center;
+	margin: $spacing-medium $spacing-default 35px $spacing-default;
+	padding: 10px 13px 10px 45px;
+	border-radius: 10px;
+}
+.fbra_searchLocation {
+	@extend .fbra_gridItem--row;
+
+	padding:0 $spacing-default;
+	
+	.fbra_formItem {
+		@extend .fbra_gridItem--col-sm-4;
+		
+		padding-right: $spacing-extra-small;
+		margin: 0;
+	}
+}
+
+

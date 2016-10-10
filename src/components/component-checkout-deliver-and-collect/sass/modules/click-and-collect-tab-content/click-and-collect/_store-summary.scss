@@ -1,0 +1,25 @@
+.fbra_locationSummary {
+}
+.fbra_locationSummary__storeDetails {}
+.fbra_locationSummary__storeDetails__name {}
+.fbra_locationSummary__storeDetails__distance {
+	@include font-size($font-size-default);
+
+	font-family: $font-regular;
+}
+.fbra_locationSummary__storeDetails__address {}
+.fbra_locationSummary__storeDetails__address__storeAddress {}
+.fbra_locationSummary__storeDetails__address__storeCity {}
+.fbra_locationSummary__googleMap {
+	width: 100%;
+	height: 200px;
+}
+.fbra_locationSummary__editAreaLink {}
+.fbra_locationSummary__collectFrom {}
+.fbra_locationSummary__driveThru {}
+.fbra_locationSummary__driveThru__newDriveThru {}
+.fbra_locationSummary__openingHours {}
+.fbra_locationSummary__openingHours__heading {
+	margin-bottom: 20px;
+}
+.fbra_locationSummary__openingHours__text {}

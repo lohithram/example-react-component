@@ -1,0 +1,30 @@
+.fbra_appContainer {}
+
+.fbra_clickAndCollectTabContentContainer__storeSelectedScreen {
+	
+}
+
+.fbra_deliverToAddressTabContentContainer__notification {
+	@extend .fbra_clickAndCollectTabContentContainerNotification;
+}
+
+.fbra_deliverToAddressTabContentContainer__notification + .fbra_deliverToAddressTabContentContainer__selectAddressScreen  {
+	.fbra_selectAddressScreen__introText {
+		padding-top: 0px;
+	}
+}
+
+.fbra_deliverToAddressTabContentContainer__addressSelectedScreen,
+.fbra_deliverToAddressTabContentContainer__addAddressScreen   {
+	padding: 0;
+}
+
+.fbra_selectItem__label {
+	margin-bottom: 10px;
+}
+
+.fbra_inputWrap {
+	.fbra_label {
+		margin-bottom: 10px;
+	}
+}

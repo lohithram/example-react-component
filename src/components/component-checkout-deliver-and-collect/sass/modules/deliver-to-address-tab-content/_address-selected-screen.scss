@@ -1,0 +1,33 @@
+.fbra_addressSelectedScreen {
+	padding: 0 $spacing-default;
+}
+.fbra_addressSelectedScreen__heading {
+	@extend .fbra_gridItem--col-sm-6;
+	@include font-size($font-size-default);
+	
+	font-family: $font-bold;
+	margin: 0 0 5px 0;
+}
+.fbra_addressSelectedScreen__whenToDeliver {
+	@extend .fbra_gridItem--row;
+
+	margin-bottom: 24px;
+}
+.fbra_addressSelectedScreen__howCostCalculatedLink {
+	@extend .fbra_gridItem--col-sm-6;
+	@include font-size($font-size-small);
+	
+	text-align: right;
+}
+.fbra_addressSelectedScreen__whoWillReceiveDelivery {
+
+	.fbra_addressSelectedScreen__heading {
+		margin-bottom: 10px;	
+	}
+
+	.fbra_receiveDelivery {
+		margin-bottom: 20px;
+	}
+
+}
+.fbra_addressSelectedScreen__deliveryInstructions {}

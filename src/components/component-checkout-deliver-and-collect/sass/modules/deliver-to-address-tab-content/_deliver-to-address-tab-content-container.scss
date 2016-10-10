@@ -1,0 +1,75 @@
+.fbra_deliverToAddressTabContentContainer {
+	.fbra_paragraph {
+		@include font-size($font-size-default);
+		@extend .fbra_gridItem--col-sm-10;
+		@extend .fbra_gridItem--col-xs-12;
+		
+		margin: 0;
+	}
+}
+.fbra_cmpDeliverAndCollect__selectAddressScreenEnterNewAddressLink {
+	font-family: latoBold;
+}
+.fbra_selectAddressScreen__heading {
+	@include font-size(24);
+	
+	padding: 30px 30px 20px 30px;
+	margin: 30px 0 11px 0;
+	background: url("../../base/img/fbra_button_arrow_down.png") no-repeat 96.5% center;
+	border-top: solid 1px $color-product-more-border;
+	cursor: pointer;
+}
+.fbra_componentDeliverAndCollect__addressBookList {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.fbra_componentCheckoutAddressBook__savedAddress {
+	@include font-size($font-size-small);
+	@extend .fbra_gridItem--col-xs-12;
+	
+	display: inline-block;
+	background: $color-gallery;
+	padding: $spacing-small $spacing-medium;
+	margin: 0 $spacing-medium $spacing-medium 0;
+	min-height: 200px;
+	vertical-align: top;
+
+	.fbra_componentCheckoutAddressBook__addressNotAvailbleText {
+		@include font-size($font-size-small);
+		
+		display: block;
+		background: url("../../base/img/fbra_info_round_icon.png") no-repeat 8px center;
+		padding: 0 0 0 45px;
+		border-radius: 5px;
+		text-align: left;
+	}
+}
+.fbra_componentCheckoutAddressBook__savedAddressText {
+	color: $color-gray;
+	padding-bottom: 20px;
+	display: block;
+}
+
+.fbra_componentCheckoutAddressBook__useAddressButton {
+	@extend .fbra_button--secondary;
+
+	height: 40px;
+}
+.fbra_componentCheckoutAddressBook__removeAddressButton {
+	font-family: $font-bold;
+	display: block;
+	text-align: center;
+	padding-top: 20px;
+}
+
+@media screen and (min-width: $breakpoint-mobile-landscape){
+	.fbra_componentCheckoutAddressBook__savedAddress {
+		width: 44%;
+	}
+}
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_componentCheckoutAddressBook__savedAddress {
+		margin-right: 0;
+	}
+}

@@ -1,0 +1,81 @@
+.fbra_resultsFilter {
+	@extend .fbra_gridItem--row;
+	@extend .fbra_gridItem--col-xs-12;
+
+	padding: 0 $spacing-default;
+}
+.fbra_resultsFilter__filters {
+	@extend .fbra_gridItem--col-sm-8;
+	@include font-size($font-size-small);
+
+	.fbra_text {
+		padding-right: $spacing-extra-small;
+	}
+	.fbra_anchor {
+		padding: 0 10px;
+	}
+	.fbra_allLocations {
+		border-right: solid 1px $color-border;
+	}
+}
+
+.fbra_resultsFilter__summary {
+	@include font-size($font-size-small);
+	padding-top: $spacing-extra-small;
+}
+
+.fbra_resultsFilter__filters__allLocations--selected,
+.fbra_resultsFilter__filters__falabellaStores--selected {
+	@extend .fbra_gridItem--col-sm-8;
+	@extend .fbra_gridItem--col-xs-12;
+	@include font-size($font-size-small);
+
+	color: $color-mine-shaft;
+	font-family: $font-bold;
+
+	.fbra_anchor {
+		text-decoration: none;
+	}
+
+	.fbra_formItem {
+		margin:18px 0 34px 0px;
+	}
+}
+.fbra_resultsFilter__filters__falabellaStores--selected {}
+.fbra_resultsFilter__viewFilters {
+	@extend .fbra_gridItem--col-sm-4;
+
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	li {
+		display: inline-block;
+		@extend .fbra_gridItem--col-sm-6;
+	}
+}
+.fbra_resultsFilter__viewFilters__listView {
+	text-align: left;
+	color: $color-gray;
+	background: url("../../base/img/fbra_list-view_inactive_icon.png") no-repeat left center;
+	padding-left: $spacing-medium;
+}
+.fbra_resultsFilter__viewFilters__listView--selected {
+	color: $color-mine-shaft;
+	background: url("../../base/img/fbra_list-view_active_icon.png") no-repeat left center;
+}
+.fbra_resultsFilter__viewFilters__mapView {
+	text-align: left;
+	color: $color-gray;
+	background: url("../../base/img/fbra_map-view_active_icon.png") no-repeat left center;
+	padding-left: $spacing-medium;
+}
+.fbra_resultsFilter__viewFilters__mapView--selected {
+	color: $color-mine-shaft;
+	background: url("../../base/img/fbra_map-view_active_icon-1.png") no-repeat left center;
+}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_resultsFilter {
+		margin-top: $spacing-small;
+	}
+}

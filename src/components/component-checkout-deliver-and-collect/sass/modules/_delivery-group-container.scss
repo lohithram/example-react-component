@@ -1,0 +1,71 @@
+.fbra_deliveryGroupsContainer {}
+
+.fbra_deliveryGroupsContainer__productDetails {
+	@extend .fbra_gridItem--col-sm-8;
+	@extend .fbra_gridItem--col-xs-8;
+
+	padding-left: 20px;
+	vertical-align: top;
+}
+
+.fbra_deliveryGroupsContainer__itemImageWrapper {
+	@extend .fbra_gridItem--row;
+
+	margin: $spacing-default 0 $spacing-medium 0;
+}
+.fbra_deliveryGroupsContainer__itemImage {
+	@extend .fbra_gridItem--col-sm-2;
+	@extend .fbra_gridItem--col-xs-4;
+}
+.fbra_deliveryGroupsContainer__itemName {
+	@extend .fbra_gridItem--col-sm-12;
+	@include font-size(12);
+
+	color: $color-gray;
+	font-family: $font-bold;
+	text-transform: uppercase;
+	vertical-align: top;
+}
+.fbra_deliveryGroupsContainer__itemDetails {
+	@extend .fbra_gridItem--col-sm-12;
+	@include font-size(18);
+}
+.fbra_deliveryGroupsContainer__itemSize {
+	@extend .fbra_gridItem--col-sm-12;
+	@include font-size($font-size-default);	
+
+	color: $color-ghost-text;
+	padding-top: 20px;
+}
+.fbra_deliveryGroupsContainer__deliveryGroupsContent {
+	padding: 0 $spacing-default;
+
+	.fbra_deliveryGroupTabs {
+		padding: 0px;
+	}
+}
+.fbra_deliveryGroupsContainer__guestNoLocationMessage {}
+.fbra_deliveryGroupsContainer__deliverToAddressTabContent + .fbra_deliveryGroupsContainer__deliverToAddressTabContent {
+	.fbra_deliveryGroupHeader {
+		margin-top: 10px;
+	}
+}
+.fbra_deliveryGroupsContainer__clickAndCollectTabContent {}
+.fbra_deliveryGroupsContainer__notification {
+	margin-left: $spacing-small;
+	margin-right: $spacing-small;
+	.fbra_notification__link {
+		padding-left: .25em;
+	}
+}
+
+.fbra_deliveryGroupsContainer__guestNoLocationMessage {
+	@include font-size($font-size-small);
+
+	background: $color-highlight url("../../base/img/fbra_info_round_icon.png") no-repeat 10px center;
+	margin: 15px 0 10px 0;
+	padding: 13px 13px 10px 50px;
+	border-radius: 10px;
+	text-align: left;
+	min-height: 50px;
+}

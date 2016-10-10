@@ -1,0 +1,11 @@
+.fbra_deliveryGroupHeader {
+	margin-top: 5px;
+	padding: 0 $spacing-default;
+}
+.fbra_deliveryGroupHeader__deleteLink {
+	display: block;
+	margin-bottom: 25px;
+}
+.fbra_deliveryGroupHeader__heading {
+	@include font-size($font-size-extra-large);
+}

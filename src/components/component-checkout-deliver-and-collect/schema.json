@@ -1,0 +1,11 @@
+{
+  "functions": {
+    "destroyComponent": {
+      "arguments": {}
+    },
+    "refreshComponent": {
+      "arguments": {}
+    }
+  },
+  "events": {}
+}

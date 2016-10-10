@@ -1,0 +1,41 @@
+.fbra_shippingMethod {}
+.fbra_shippingMethod__header {
+	@extend .fbra_gridItem--row;
+	
+	.fbra_label {
+		margin: 0;
+	}
+}
+.fbra_shippingMethod__type {
+	@extend .fbra_gridItem--col-sm-4;
+	@extend .fbra_gridItem--col-xs-12;
+}
+.fbra_shippingMethod__form {}
+.fbra_shippingMethod__radio + span {
+	font-weight: normal;
+	font-family: $font-regular;
+}
+.fbra_shippingMethod__deliveryInfoDate {
+	@extend .fbra_gridItem--col-sm-3;
+	@extend .fbra_gridItem--col-xs-7;
+	@include font-size($font-size-small);
+}
+.fbra_shippingMethod__deliveryInfoCost {
+	@extend .fbra_gridItem--col-sm-5;
+	@extend .fbra_gridItem--col-xs-5;
+	@include font-size($font-size-default);
+
+	text-align: right;
+}
+
+
+.fbra_shippingMethod__type + .fbra_shippingMethod__deliveryInfoCost  {
+	@extend .fbra_gridItem--col-sm-8;
+	@extend .fbra_gridItem--col-xs-6;
+}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_shippingMethod__deliveryInfoCost {
+		float: none;
+	}
+}

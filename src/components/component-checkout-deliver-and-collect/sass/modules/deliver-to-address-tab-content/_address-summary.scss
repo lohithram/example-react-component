@@ -1,0 +1,29 @@
+.fbra_addressSummary {
+	@extend .fbra_gridItem--row;	
+	
+	border: solid 1px $color-border;
+	border-radius: 10px;
+	padding: 20px $spacing-default;
+	margin: $spacing-small 0;
+}
+.fbra_addressSummary__orderAddress {
+	@extend .fbra_gridItem--col-sm-10;
+	
+	color: $color-gray;
+}
+.fbra_addressSummary__orderAddressCustomerAddress,
+.fbra_addressSummary__orderAddressCustomerDivision {
+	display: block;
+}
+.fbra_addressSummary__editAddressLink {
+	@extend .fbra_gridItem--col-sm-2;
+	@extend .fbra_gridItem--col-xs-4;
+	@include font-size($font-size-small);
+	
+	vertical-align: top;
+	text-align: right;
+	padding-right: 30px;
+	margin-top: $spacing-extra-small;
+	color: $color-gray;
+	background: url("../../base/img/fbra_edit_icon.png") no-repeat right center;
+}

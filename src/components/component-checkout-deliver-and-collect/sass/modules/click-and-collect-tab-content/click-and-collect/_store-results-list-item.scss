@@ -1,0 +1,127 @@
+.fbra_locationResultsListItem {
+	@extend .fbra_gridItem--row;
+	
+	border-top: solid 1px $color-product-more-border;
+	padding: $spacing-small;
+
+	.fbra_locationResultsListItem__driveThru {
+		margin: 25px 0 10px 0;
+		.fbra_notification__link {
+			padding-left: .5em;
+		}
+	}
+
+}
+.fbra_locationResultsListItem__closestFalabellaStore {
+	@include font-size($font-size-large);
+	
+	color: $color-pistachio;
+	font-family: latoLight;
+	padding-bottom: $spacing-extra-small;
+}
+.fbra_locationResultsListItem__storeDetails {
+	@extend .fbra_gridItem--col-sm-6;
+	@extend .fbra_gridItem--col-xs-9;
+	
+	@include font-size($font-size-small);
+}
+.fbra_locationResultsListItem__storeIcon {
+	@extend .fbra_gridItem--col-sm-2;
+	@extend .fbra_gridItem--col-xs-3;
+	
+	vertical-align: top;
+	padding-right: $spacing-medium;
+}
+.fbra_locationResultsListItem__storeName {
+	@include font-size($font-size-default);
+	
+	font-family: $font-bold;
+	margin: 0;
+}
+.fbra_locationResultsListItem__distanceToStore {
+	@include font-size($font-size-default);
+	
+	font-family: $font-bold;
+	margin: 0;
+}
+.fbra_locationResultsListItem__addressWrap {
+	@include font-size($font-size-small);
+
+	color: $color-gray;
+	padding-bottom: 23px;
+}
+.fbra_locationResultsListItem__addressWrap__address {
+	display: block;
+}
+.fbra_locationResultsListItem__addressWrap__storeCity {
+	display: block;
+}
+.fbra_locationResultsListItem__mapAndOpeningHours__link {
+	background: url("../../base/img/fbra_map_icon.png") no-repeat left center;
+	padding: 15px 0 15px 30px;
+	border-bottom: none;
+}
+.fbra_locationResultsListItem__collectFromDetails {
+	@extend .fbra_gridItem--col-sm-4;
+	@include font-size($font-size-small);
+	
+	vertical-align: top;
+	.fbra_formItem {
+		margin-bottom: 0;
+	}
+	.fbra_select {
+		margin-bottom: $spacing-extra-small;
+	}
+}
+.fbra_locationResultsListItem__collectFrom {
+	color: $color-gray;
+	padding-bottom: $spacing-extra-small;
+}
+.fbra_locationResultsListItem__collectFromHeading {
+	@include font-size($font-size-default);
+	
+	color: $color-mine-shaft;
+	font-family: $font-bold;
+	display: block;
+	padding-bottom: $spacing-extra-small;
+}
+.fbra_locationResultsListItem__driveThru{	
+	@include font-size($font-size-small);
+
+	background: $color-highlight url("../../base/img/fbra_button_arrow_right.png") no-repeat 98% 20px;
+	padding: $spacing-extra-small;
+	border-radius: 5px;
+	margin-top: $spacing-extra-small;
+
+	.fbra_notification__link {
+		font-family: $font-bold;
+		display: inline;
+	}
+	.fbra_notification {
+		display: inline;
+	}
+}
+.fbra_locationResultsListItem__driveThru__newDriveThru {
+	@include font-size($font-size-small);
+
+	font-family: $font-bold;
+	display: inline;
+}
+.fbra_locationResultsListItem__selectButton {
+	@extend .fbra_button--secondary;
+
+	margin-bottom: 0;
+}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_locationResultsListItem__storeIcon {
+		padding-right: 10px;
+	}
+	.fbra_locationResultsListItem__collectFromHeading {
+		@include font-size($font-size-small);
+		display: inline;
+	}
+	.fbra_locationResultsListItem__addressWrap {
+		padding: 0;
+	}
+}

@@ -1,0 +1,48 @@
+.fbra_receiveDelivery {
+	border: none;
+	padding: 0;
+	margin: 0 0 $spacing-small;	
+}
+.fbra_receiveDelivery__radioOptionIwillReceive,
+.fbra_receiveDelivery__radioOptionSomeoneElse{
+	@extend .fbra_gridItem--col-sm-12;
+
+	border: solid 1px $color-border;
+	border-radius: 5px;
+	padding: $spacing-extra-small;
+	margin: 5px 0;
+	.fbra_label{
+		margin-bottom: 0;
+	}
+}
+.fbra_receiveDelivery__radioOptionSomeoneElse{
+	@extend .fbra_gridItem--col-sm-5;
+	.fbra_label{
+		margin-bottom: 0;
+	}
+}
+.fbra_deliveryInstructions__collapsibleHeader{
+	display: inline-block;
+	padding: 15px 20px 20px 0;
+	width: 100%;
+	background: url("../../base/img/fbra_button_arrow_down.png") no-repeat 26% center;
+}
+.fbra_receiveDelivery__idTypeSelector {}
+.fbra_receiveDelivery__recipientForm {
+	.fbra_formItem__thirdPersonLastName {
+		border-top: 0;
+	}
+	.fbra_label {
+		margin-top: 10px;
+	}
+}
+.fbra_receiveDelivery__form {}
+.fbra_receiveDelivery__collapsible {}
+.fbra_receiveDelivery__collapsibleItem {}
+.fbra_receiveDelivery__collapsibleBody {}
+
+@media screen and (max-width: $breakpoint-mobile-landscape){
+	.fbra_receiveDelivery__radioOptionIwillReceive {
+		margin-bottom: 15px;
+	}
+}

@@ -1,0 +1,16 @@
+.fbra_additionalInfo {}
+.fbra_additionalInfo__locationsListed {
+	color: $color-silver;
+	text-align: center;
+}
+.fbra_additionalInfo__heading {}
+.fbra_additionalInfo__details {
+  .fbra_notification__link {
+    margin-left: .25em;
+  }
+}
+.fbra_additionalInfo__viewMoreLink {
+	padding-left: $spacing-default;
+	margin-bottom: $spacing-default;
+	display: block;
+}

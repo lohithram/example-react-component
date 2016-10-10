@@ -1,0 +1,12 @@
+.fbra_whenToDeliver {}
+.fbra_whenToDeliver__shippingMethod {
+	@extend .fbra_gridItem--row;
+	@include font-size($font-size-small);
+
+	border: solid 1px $color-border;
+	border-radius: 5px;
+	padding: $spacing-extra-small;
+	margin: 10px 0;
+}
+.fbra_whenToDeliver__shippingMethodHeader {}
+.fbra_whenToDeliver__shippingMethodBody {}
